@@ -5,7 +5,14 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FBDemo", "FBDemo\FBDemo.csproj", "{2690996D-FD23-4F43-8F82-7E923E348D9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebook.Core", "Facebook.Core\Facebook.Core.csproj", "{53BFE522-9CF9-4892-96BF-CDB263C95FEA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FB", "Facebook.Core\FB.csproj", "{53BFE522-9CF9-4892-96BF-CDB263C95FEA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{FAE38B81-79D5-4960-9333-6AB76C309276}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

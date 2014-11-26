@@ -1,1 +1,14 @@
 D:\Kishore\Blog Projects\FacebookDemo\FBDemo\FBDemo\bin\Debug\FBDemo.exe.config
+D:\Kishore\Blog Projects\FacebookDemo\FBDemo\FBDemo\bin\Debug\FBDemo.exe
+D:\Kishore\Blog Projects\FacebookDemo\FBDemo\FBDemo\bin\Debug\FBDemo.pdb
+D:\Kishore\Blog Projects\FacebookDemo\FBDemo\FBDemo\bin\Debug\Facebook.dll
+D:\Kishore\Blog Projects\FacebookDemo\FBDemo\FBDemo\bin\Debug\Facebook.xml
+D:\Kishore\Blog Projects\FacebookDemo\FBDemo\FBDemo\obj\Debug\FBDemo.csprojResolveAssemblyReference.cache
+D:\Kishore\Blog Projects\FacebookDemo\FBDemo\FBDemo\obj\Debug\FBDemo.Form1.resources
+D:\Kishore\Blog Projects\FacebookDemo\FBDemo\FBDemo\obj\Debug\FBDemo.Properties.Resources.resources
+D:\Kishore\Blog Projects\FacebookDemo\FBDemo\FBDemo\obj\Debug\FBDemo.csproj.GenerateResource.Cache
+D:\Kishore\Blog Projects\FacebookDemo\FBDemo\FBDemo\obj\Debug\FBDemo.exe
+D:\Kishore\Blog Projects\FacebookDemo\FBDemo\FBDemo\obj\Debug\FBDemo.pdb
+D:\Kishore\Blog Projects\FacebookDemo\FBDemo\FBDemo\obj\Debug\FBDemo.Browser.resources
+D:\Kishore\Blog Projects\FacebookDemo\FBDemo\FBDemo\bin\Debug\FB.dll
+D:\Kishore\Blog Projects\FacebookDemo\FBDemo\FBDemo\bin\Debug\FB.pdb
