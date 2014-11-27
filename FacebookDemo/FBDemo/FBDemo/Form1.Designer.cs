@@ -32,13 +32,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtAppId = new System.Windows.Forms.TextBox();
             this.btnFeeds = new System.Windows.Forms.Button();
+            this.btnGetConfig = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAuthorize
             // 
-            this.btnAuthorize.Location = new System.Drawing.Point(235, 11);
+            this.btnAuthorize.Location = new System.Drawing.Point(93, 39);
             this.btnAuthorize.Name = "btnAuthorize";
-            this.btnAuthorize.Size = new System.Drawing.Size(109, 23);
+            this.btnAuthorize.Size = new System.Drawing.Size(136, 23);
             this.btnAuthorize.TabIndex = 0;
             this.btnAuthorize.Text = "Authorize";
             this.btnAuthorize.UseVisualStyleBackColor = true;
@@ -57,31 +58,42 @@
             // 
             this.txtAppId.Location = new System.Drawing.Point(93, 13);
             this.txtAppId.Name = "txtAppId";
+            this.txtAppId.ReadOnly = true;
             this.txtAppId.Size = new System.Drawing.Size(136, 20);
             this.txtAppId.TabIndex = 3;
-            this.txtAppId.Text = "317715841762334";
             // 
             // btnFeeds
             // 
-            this.btnFeeds.Location = new System.Drawing.Point(13, 57);
+            this.btnFeeds.Location = new System.Drawing.Point(15, 75);
             this.btnFeeds.Name = "btnFeeds";
             this.btnFeeds.Size = new System.Drawing.Size(75, 23);
             this.btnFeeds.TabIndex = 4;
             this.btnFeeds.Text = "Get Feeds";
             this.btnFeeds.UseVisualStyleBackColor = true;
-            this.btnFeeds.Click += new System.EventHandler(this.btnFeeds_Click);
+            // 
+            // btnGetConfig
+            // 
+            this.btnGetConfig.Location = new System.Drawing.Point(235, 12);
+            this.btnGetConfig.Name = "btnGetConfig";
+            this.btnGetConfig.Size = new System.Drawing.Size(75, 23);
+            this.btnGetConfig.TabIndex = 5;
+            this.btnGetConfig.Text = "Get App";
+            this.btnGetConfig.UseVisualStyleBackColor = true;
+            this.btnGetConfig.Click += new System.EventHandler(this.btnGetConfig_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(567, 299);
+            this.Controls.Add(this.btnGetConfig);
             this.Controls.Add(this.btnFeeds);
             this.Controls.Add(this.txtAppId);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAuthorize);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,6 +105,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtAppId;
         private System.Windows.Forms.Button btnFeeds;
+        private System.Windows.Forms.Button btnGetConfig;
     }
 }
 

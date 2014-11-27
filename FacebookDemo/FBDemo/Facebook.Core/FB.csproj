@@ -36,6 +36,7 @@
       <HintPath>..\packages\Facebook.6.8.0\lib\net45\Facebook.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -45,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\FacebookLogin.cs" />
+    <Compile Include="Core\FacebookSetting.cs" />
     <Compile Include="FbApp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

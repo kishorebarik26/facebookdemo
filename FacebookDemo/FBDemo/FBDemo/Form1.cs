@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Dynamic;
@@ -19,6 +20,7 @@ namespace FBDemo
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void btnAuthorize_Click(object sender, EventArgs e)
@@ -31,20 +33,38 @@ namespace FBDemo
                 browserForm.webBrowser.Navigate(fbloginuri);
                 browserForm.ShowDialog();
                 AccessToken = browserForm.AccessToken;
-
             }
-            else
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            GetConfiguration();
+        }
+
+        public void GetConfiguration()
+        {
+            var appId = ConfigurationManager.AppSettings["facebook:AppId"];
+            if (appId != null)
             {
-                MessageBox.Show(@"Please enter application ID", @"Alert",MessageBoxButtons.OK);
+                if (!string.IsNullOrEmpty(appId))
+                {
+                    txtAppId.Text = appId;
+                }
             }
         }
 
         private async void btnFeeds_Click(object sender, EventArgs e)
         {
-            Facebook.FacebookClient fbClient = new FacebookClient(AccessToken);
+            var fbClient = new FacebookClient(AccessToken);
             dynamic parameters = new ExpandoObject();
             parameters.access_token = AccessToken;
             dynamic result = await fbClient.GetTaskAsync("me/feed", parameters);
+        }
+
+        private void btnGetConfig_Click(object sender, EventArgs e)
+        {
+            GetConfiguration();
         }
     }
 }
